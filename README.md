@@ -2,12 +2,12 @@
 
 ![Sudoku desktop interface](images/sudoku-gui-preview.png)
 
-A Python application for validating and solving standard 9×9 Sudoku puzzles. It checks row, column, and 3×3 box constraints, applies logical solving techniques, and uses efficient backtracking when deduction alone is not enough.
+A Python application to validate and solve standard 9×9 Sudoku puzzles. It checks row, column, and 3×3 box constraints, applies logical solving techniques. Also, it uses efficient backtracking when deduction alone is not enough.
 
 ## Features
 
 - Validates incomplete and completed Sudoku boards
-- Highlights conflicting cells in the desktop interface
+- Highlights conflicting cells
 - Applies naked singles and hidden singles
 - Uses minimum-remaining-values backtracking for difficult puzzles
 - Supports `.sdk` and plain-text puzzle files
@@ -70,14 +70,4 @@ A puzzle file contains nine rows. Use digits for known values and `.` or `0` for
 
 ```bash
 python -m unittest discover -s tests -v
-```
-
-## Structure
-
-```text
-sudoku_solver/   Core logic, file I/O, CLI, and GUI
-data/            Example puzzles
-tests/           Automated tests
-images/          Project visuals
-main.py          Application entry point
 ```
